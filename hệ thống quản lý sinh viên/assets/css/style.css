@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(215, 248, 248);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid #000;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+td,
+th {
+  border: 2px solid #000;
+  padding: 10px;
+  text-align: center;
+  background-color: #e0dede;
+}
+
+input,
+label {
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: #204969;
+  color: #fff6f7;
+  border-radius: 10px;
+}
+
+.thongtin {
+  border: 2px solid #000;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  background-color: #e0dede;
+  float: left;
+}
+
+.sapxep-sv > h3,
+.loc-sv > h3,
+.thongtin > h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.thongtin label {
+  width: 100px;
+  float: left;
+}
+
+.thongtin input[type="number"],
+.thongtin input[type="text"] {
+  width: 70%;
+  padding: 5px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+.list-sv {
+  clear: both;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-sv > h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+#studentList {
+  background-color: #e0dede;
+}
+
+.loc-sv {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #000;
+  background-color: #e0dede;
+  text-align: center;
+  width: 30%;
+  float: left;
+}
+
+.sapxep-sv label,
+.loc-sv label {
+  width: 100px;
+  float: left;
+  text-align: left;
+}
+
+.sapxep-sv select,
+.loc-sv select,
+.loc-sv input[type="text"],
+.loc-sv input[type="number"] {
+  width: 70%;
+  padding: 5px;
+}
+
+.sapxep-sv {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #000;
+  background-color: #e0dede;
+  text-align: center;
+  width: 30%;
+  float: left;
+}

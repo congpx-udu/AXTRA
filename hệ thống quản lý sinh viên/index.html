@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="header">QUẢN LÝ SINH VIÊN</h1>
+    </header>
+    <div class="container">
+      <div class="thongtin">
+        <h3>THÔNG TIN SINH VIÊN</h3>
+        <form id="studentForm" action="#">
+          <label for="fullName">Họ và tên:</label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            placeholder="Nhập họ và tên"
+            required
+          />
+          <br />
+          <label for="iD">Mã sinh viên:</label>
+          <input
+            type="number"
+            name="iD"
+            id="iD"
+            placeholder="Nhập mã sinh viên"
+            required
+          />
+          <br />
+          <label for="age">Tuổi:</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Nhập tuổi"
+            required
+          />
+          <br />
+          <label for="gender">Giới tính:</label>
+          <input type="radio" name="gender" id="male" value="Nam" required />
+          Nam
+          <input type="radio" name="gender" id="female" value="Nữ" required />
+          Nữ
+          <br />
+          <br />
+          <label for="gpa">GPA:</label>
+          <input
+            type="number"
+            id="gpa"
+            step="0.01"
+            placeholder="0 - 4.00"
+            required
+          />
+          <br />
+          <label for="hometown">Quê quán:</label>
+          <input type="text" id="hometown" placeholder="Quê quán" required />
+          <br />
+          <button type="submit">Lưu thông tin</button>
+        </form>
+      </div>
+      <div class="loc-sv">
+        <h3>LỌC SINH VIÊN</h3>
+        <form id="loc-thongtinsv" action="#">
+          <label for="gender">Nam/Nữ:</label>
+          <select name="gender" id="filterGender">
+            <option value="Tất cả">Tất cả</option>
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+          </select>
+          <br />
+          <br />
+          <label for="hometown">Quê quán:</label>
+          <input type="text" name="hometown" id="filterHometown" />
+          <br />
+          <label for="minGPA">GPA tối thiểu:</label>
+          <input
+            type="number"
+            id="filterGPA"
+            step="0.01"
+            placeholder="0 - 4.00"
+          />
+          <br />
+          <button type="submit">Lọc sinh viên</button>
+        </form>
+      </div>
+      <div class="sapxep-sv">
+        <h3>SẮP XẾP SINH VIÊN</h3>
+        <form id="sort-sv" action="#">
+          <label for="tieuchi">Chọn tiêu chí:</label>
+          <select name="tieuchi" id="tieuchi">
+            <option value="fullName">Họ và tên</option>
+            <option value="age">Tuổi</option>
+            <option value="gpa">GPA</option>
+          </select>
+          <br />
+          <br />
+          <label for="thutu">Thứ tự:</label>
+          <select name="thutu" id="thutu">
+            <option value="asc">Tăng dần</option>
+            <option value="desc">Giảm dần</option>
+          </select>
+          <br />
+          <br />
+          <button type="submit">Sắp xếp</button>
+        </form>
+      </div>
+    </div>
+    <div class="list-sv">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="8"><h2>DANH SÁCH SINH VIÊN</h2></th>
+          </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+      </table>
+    </div>
+    <script src="./assets/javascript/main.js"></script>
+  </body>
+</html>

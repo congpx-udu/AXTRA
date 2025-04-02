@@ -16,7 +16,7 @@ document.getElementById("studentForm").addEventListener("submit", function (e) {
   var age = parseInt(document.getElementById("age").value);
   var gpa = parseFloat(document.getElementById("gpa").value);
   var hometown = document.getElementById("hometown").value.trim();
-  var students = laySV(); // Đã sửa từ getStudents()
+  var students = laySV();
   var findId = students.findIndex((s) => s.id == id);
 
   var gender = "";

@@ -50,6 +50,7 @@ label {
   padding: 20px;
   background-color: #e0dede;
   float: left;
+  box-shadow: 0px 0px 20px #000;
 }
 
 .sapxep-sv > h3,
@@ -101,6 +102,7 @@ button {
   text-align: center;
   width: 30%;
   float: left;
+  box-shadow: 0px 0px 20px #000;
 }
 
 .sapxep-sv label,
@@ -126,4 +128,9 @@ button {
   text-align: center;
   width: 30%;
   float: left;
+  box-shadow: 0px 0px 20px #000;
+}
+
+.table-sv {
+  box-shadow: 0px 0px 20px #000;
 }
